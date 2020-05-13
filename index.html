@@ -10,16 +10,15 @@
       <img src="img/neuefische-gmbh-logo.svg" alt="neuefische-gmbh-logo" />
       <h1>neuefische Blog</h1>
       <nav>
-        <a href="">articles</a>
-        <a href="">imprint</a>
+        <a href="#articles">articles</a>
+        <a href="#imprint">imprint</a>
       </nav>
     </header>
 
-    <main>
-      <h2>HTML</h2>
-      <h3>The art of sectioning</h3>
-
+    <main id="articles">
       <article>
+        <h2>HTML</h2>
+        <h3>The art of sectioning</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
           quibusdam ad sunt pariatur obcaecati! Facere, eum! Dicta, temporibus,
@@ -56,11 +55,40 @@
             <li><a href="">Link3</a></li>
           </ul>
         </aside>
+
+        <section>
+          <form>
+            <div>
+              <label for="name">
+                Name:
+                <input type="text" />
+              </label>
+            </div>
+            <p></p>
+            <span>Dein Kommentar</span>
+            <div>
+              <label for="comment">
+                <textarea
+                  name="comment"
+                  id="comment"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </label>
+            </div>
+          </form>
+          <h4>Han Solo 13.05.2020</h4>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus
+            neque amet magni, eum eveniet blanditiis dolorem eos minima quia
+            similique?
+          </p>
+        </section>
       </article>
     </main>
 
-    <footer>
-      <div>&copy; Copyright neuefische GmbH</div>
+    <footer id="imprint">
+      <div>&copy; neuefische GmbH</div>
     </footer>
   </body>
 </html>
