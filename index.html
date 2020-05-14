@@ -3,83 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script defer src="./js/jquery-3.5.1.min.js"></script>
+    <script defer src="/js/bootstrap.bundle.min.js"></script>
     <title>NF-Blog</title>
   </head>
-  <body>
-    <header>
-      <img src="img/neuefische-gmbh-logo.svg" alt="neuefische-gmbh-logo" />
-      <h1>neuefische Blog</h1>
-      <nav>
-        <a href="#articles">articles</a>
-        <a href="#imprint">imprint</a>
-      </nav>
+
+
+  <body class="container">
+    <header class="row mt-5">
+      <div class="col-12 col-md-4 img-fluid">
+        <img src="img/neuefische-gmbh-logo.svg" alt="neuefische-gmbh-logo" />
+      </div>
+        
+       <div class="col-12 col-md-4">
+         <h1>neuefische Blog</h1>
+       </div>
+
+       <div class="col-12 col-md-4">
+        <nav>
+          <a href="#articles">articles</a>
+          <a href="#imprint">imprint</a>
+        </nav>
+       </div>
+
     </header>
 
-    <main id="articles">
-      <article>
-        <h2>HTML</h2>
-        <h3>The art of sectioning</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-          quibusdam ad sunt pariatur obcaecati! Facere, eum! Dicta, temporibus,
-          debitis alias corrupti dolorem ipsum in harum commodi accusantium
-          reiciendis exercitationem recusandae doloribus quo, quaerat veniam
-          voluptatum ea architecto nemo consequatur eum rem totam. Delectus
-          minima impedit repudiandae quae ipsa accusantium quas.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-          corporis deleniti, blanditiis possimus minus eum error vitae tenetur,
-          id ipsa similique eveniet soluta, exercitationem doloremque inventore
-          veritatis? Saepe ducimus ea sapiente magnam vel, explicabo facilis
-          optio excepturi nisi molestiae unde, placeat iure? Tenetur
-          consequuntur nobis sint. Mollitia rerum modi nam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
-          odit nemo nisi soluta suscipit dicta illum repudiandae vero
-          exercitationem! Placeat ad, suscipit illo officiis cupiditate
-          accusamus sunt voluptas. Autem explicabo veniam ut corporis
-          consequatur voluptate, minus libero dolor omnis itaque ipsum qui
-          necessitatibus fugiat sunt sed nam quia optio tenetur?
-        </p>
+    <main class="row mt-5">
+      <div class="mt-5 col-12 col-md-8">
+        <article>
+          <h2>HTML</h2>
+          <h3>The art of sectioning</h3>
+          <div class="mtb-3">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+              quibusdam ad sunt pariatur obcaecati! Facere, eum! Dicta, temporibus,
+              debitis alias corrupti dolorem ipsum in harum commodi accusantium
+              reiciendis exercitationem recusandae doloribus quo, quaerat veniam
+              voluptatum ea architecto nemo consequatur eum rem totam. Delectus
+              minima impedit repudiandae quae ipsa accusantium quas.
+            </p>
+          </div>
+          <div class="mtb-3">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+              corporis deleniti, blanditiis possimus minus eum error vitae tenetur,
+              id ipsa similique eveniet soluta, exercitationem doloremque inventore
+              veritatis? Saepe ducimus ea sapiente magnam vel, explicabo facilis
+              optio excepturi nisi molestiae unde, placeat iure? Tenetur
+              consequuntur nobis sint. Mollitia rerum modi nam.
+            </p>
+          </div>
+          <div class="mtb-3"> 
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
+              odit nemo nisi soluta suscipit dicta illum repudiandae vero
+              exercitationem! Placeat ad, suscipit illo officiis cupiditate
+              accusamus sunt voluptas. Autem explicabo veniam ut corporis
+              consequatur voluptate, minus libero dolor omnis itaque ipsum qui
+              necessitatibus fugiat sunt sed nam quia optio tenetur?
+            </p>
+          </div>
+      </div>
+
+        <div class="mt-5 col-12 col-md-4">
+          <aside>
+            <h3>Author</h3>
+            <p>Luke Skywalker</p>
+            <img src="img/author.jpeg" alt="Rückansicht Luke Skywalker" />
+            <p>Further articles</p>
+            <ul>
+              <li><a href="">Link1</a></li>
+              <li><a href="">Link2</a></li>
+              <li><a href="">Link3</a></li>
+            </ul>
+          </aside>
+        </div>
 
         <section>
-          <form method="get">
-            <div class="name">
-              <label for="name">Name:</label>
-              <input type="text" required />
-            </div>
-            <div class="coolness">
-              <label for="coolness">are you a cool kid?</label>
-              <input type="checkbox" name="" id="" required />
-            </div>
-            <div class="comment">
-              <label for="comment">Dein Kommentar:<br /></label>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
-            <div class="button">
-              <button>Send</button>
-            </div>
-          </form>
-          <div class="user-comment">
-            <p>Han Solo 13.05.2020</p>
-            <p>placeholdercomment</p>
-          </div>
-        </section>
+          <h2>Comments</h2>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" required />
 
-        <aside>
-          <h3>Author</h3>
-          <p>Luke Skywalker</p>
-          <img src="img/author.jpeg" alt="Rückansicht Luke Skywalker" />
-          <p>Further articles</p>
-          <ul>
-            <li><a href="">Link1</a></li>
-            <li><a href="">Link2</a></li>
-            <li><a href="">Link3</a></li>
-          </ul>
-        </aside>
-      </article>
+            <label for="comment">Dein Kommentar:<br /></label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+
+            <button>Send</button>
+          </form>
+
+          <h3>Previous comments</h3>
+         
+            <section>
+              <p>Han Solo 13.05.2020</p>
+              <p>placeholdercomment</p>
+            </section>
+      
+        </section>
     </main>
 
     <footer id="imprint">
